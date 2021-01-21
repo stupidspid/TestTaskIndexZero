@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Installers\MainInstaller.cs" />
+    <Compile Include="Assets\Scripts\Main\ButtonManager.cs" />
     <Compile Include="Assets\Scripts\Main\GameController.cs" />
     <Compile Include="Assets\Scripts\Main\MeshData.cs" />
     <Compile Include="Assets\Scripts\Main\MovingObject.cs" />

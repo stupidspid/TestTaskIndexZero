@@ -10,6 +10,7 @@ public class SimplePool
     private MovingObjectFactory movingObject;
     public List<GameObject> movingObjects = new List<GameObject>();
     public bool isActive = true;
+    public bool isButtonClicked = false;
 
     public void CreateMovingObject()
     {
@@ -29,6 +30,7 @@ public class SimplePool
         {
             if(!movingObjects[i].activeInHierarchy)
             {
+                isButtonClicked = false;
                 return movingObjects[i];
             }
         }
