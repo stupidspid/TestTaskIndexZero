@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Zenject;
@@ -8,6 +9,7 @@ public class SimplePool
     [Inject]
     private MovingObjectFactory movingObject;
     public List<GameObject> movingObjects = new List<GameObject>();
+    public bool isActive = true;
 
     public void CreateMovingObject()
     {
