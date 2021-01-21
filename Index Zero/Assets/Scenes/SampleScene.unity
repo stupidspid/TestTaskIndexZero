@@ -364,7 +364,6 @@ GameObject:
   - component: {fileID: 382390055}
   - component: {fileID: 382390054}
   - component: {fileID: 382390053}
-  - component: {fileID: 382390056}
   m_Layer: 5
   m_Name: ButtonCylinder
   m_TagString: Untagged
@@ -436,18 +435,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 700186865}
-        m_MethodName: onClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 382390056}
-        m_MethodName: onChangeButtonColor
+        m_MethodName: SpawnObject
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -494,18 +482,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 382390051}
   m_CullTransparentMesh: 0
---- !u!114 &382390056
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 382390051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c8dac7ccd8f8b44d996901eb2f9c28f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &457845436
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,7 +898,6 @@ GameObject:
   - component: {fileID: 1074908009}
   - component: {fileID: 1074908008}
   - component: {fileID: 1074908007}
-  - component: {fileID: 1074908010}
   m_Layer: 5
   m_Name: ButtonCapsule
   m_TagString: Untagged
@@ -994,18 +969,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 457845438}
-        m_MethodName: onClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1074908010}
-        m_MethodName: onChangeButtonColor
+        m_MethodName: SpawnObject
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1052,18 +1016,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1074908005}
   m_CullTransparentMesh: 0
---- !u!114 &1074908010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1074908005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c8dac7ccd8f8b44d996901eb2f9c28f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1148343610
 GameObject:
   m_ObjectHideFlags: 0
@@ -1247,7 +1199,6 @@ GameObject:
   - component: {fileID: 1484260193}
   - component: {fileID: 1484260192}
   - component: {fileID: 1484260191}
-  - component: {fileID: 1484260194}
   m_Layer: 5
   m_Name: ButtonCube
   m_TagString: Untagged
@@ -1319,18 +1270,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 825028040}
-        m_MethodName: onClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1484260194}
-        m_MethodName: onChangeButtonColor
+        m_MethodName: SpawnObject
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1377,18 +1317,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1484260189}
   m_CullTransparentMesh: 0
---- !u!114 &1484260194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1484260189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c8dac7ccd8f8b44d996901eb2f9c28f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1684721540
 GameObject:
   m_ObjectHideFlags: 0
@@ -1479,7 +1407,6 @@ GameObject:
   - component: {fileID: 1811475870}
   - component: {fileID: 1811475869}
   - component: {fileID: 1811475868}
-  - component: {fileID: 1811475871}
   m_Layer: 5
   m_Name: ButtonSphere
   m_TagString: Untagged
@@ -1551,18 +1478,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 13717536}
-        m_MethodName: onClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1811475871}
-        m_MethodName: onChangeButtonColor
+        m_MethodName: SpawnObject
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1609,18 +1525,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1811475866}
   m_CullTransparentMesh: 0
---- !u!114 &1811475871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1811475866}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c8dac7ccd8f8b44d996901eb2f9c28f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1950952520
 GameObject:
   m_ObjectHideFlags: 0

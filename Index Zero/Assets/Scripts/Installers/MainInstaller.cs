@@ -7,6 +7,6 @@ public class MainInstaller : MonoInstaller
     {
         Container.Bind<SimplePool>().AsSingle();
         Container.Bind<GameController>().AsSingle();
-        Container.BindFactory<GameObject, MovingObjectFactory>();
+        Container.BindFactory<GameObject, MovingObjectFactory>().AsSingle();
     }
 }

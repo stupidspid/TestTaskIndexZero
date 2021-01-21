@@ -6,14 +6,18 @@ public class MovingObject : MonoBehaviour
 {
     [SerializeField]
     private int speed = 2;
+
     private Rigidbody rigidbodyMovingObject;
     private void Start()
     {
         rigidbodyMovingObject = GetComponent<Rigidbody>();
     }
-    private void Update()
+    private void FixedUpdate()
     {
         rigidbodyMovingObject.position += Vector3.right * Time.deltaTime * speed;
-        if (rigidbodyMovingObject.position.x >= 23.0) gameObject.SetActive(false);
+        if (rigidbodyMovingObject.position.x >= 23)
+        {
+            gameObject.SetActive(false);
+        }
     }
 }

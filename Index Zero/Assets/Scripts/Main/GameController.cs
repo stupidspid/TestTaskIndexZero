@@ -6,21 +6,26 @@ public class GameController : MonoBehaviour
 {
     [Inject]
     private SimplePool simplePool;
+
     [SerializeField]
     private MeshData meshData;
+
     [SerializeField]
     private Material defaultMaterial;
+
     private Text scoreText;
-    private Image image;
+    private Image imageButtonColor;
+
     private byte score;
     private void Start()
     {
-        simplePool.CreateMovingObject();
         scoreText = GetComponentInChildren<Text>();
-        image = GetComponentInChildren<Image>();
+        imageButtonColor = GetComponentInChildren<Image>();
+
         GetComponentInChildren<Image>().color = Color.red;
+        simplePool.CreateMovingObject();
     }
-    public void onClick()
+    public void SpawnObject()
     {
         if (simplePool.isActive)
         {
@@ -30,17 +35,22 @@ public class GameController : MonoBehaviour
     }
 
     private IEnumerator SpawnMovingObject()
-    {     
-        score++;
+    {
         simplePool.isButtonClicked = true;
+
         simplePool.GetPoolObject().transform.position = Vector3.zero;
         simplePool.GetPoolObject().GetComponent<MeshFilter>().mesh = meshData._Mesh;
         simplePool.GetPoolObject().GetComponent<MeshCollider>().sharedMesh = meshData._Mesh;
         simplePool.GetPoolObject().GetComponent<MeshRenderer>().material = defaultMaterial;
         simplePool.GetPoolObject().SetActive(true);
+
+        score++;
         scoreText.text = score.ToString();
-        image.color = Color.green;
+
+        imageButtonColor.color = Color.green;
+
         yield return new WaitForSeconds(5f);
+
         simplePool.isActive = true;
         GetComponentInChildren<Image>().color = Color.red;
     }

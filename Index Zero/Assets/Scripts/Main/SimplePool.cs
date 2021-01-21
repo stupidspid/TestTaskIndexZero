@@ -8,19 +8,23 @@ public class SimplePool
 { 
     [Inject]
     private MovingObjectFactory movingObject;
+
     public List<GameObject> movingObjects = new List<GameObject>();
+
     public bool isActive = true;
     public bool isButtonClicked = false;
 
     public void CreateMovingObject()
     {
         GameObject temp = movingObject.Create();
+
         temp.AddComponent<MeshFilter>();
         temp.AddComponent<MeshRenderer>();
         temp.AddComponent<MeshCollider>().convex = true;
         temp.AddComponent<Rigidbody>();
         temp.AddComponent<MovingObject>();
         temp.SetActive(false);
+
         movingObjects.Add(temp);
     }
 
