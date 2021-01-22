@@ -14,18 +14,23 @@ public class SimplePool
     public bool isActive = true;
     public bool isButtonClicked = false;
 
+    private int movingObjectsCount = 2;
+
     public void CreateMovingObject()
     {
-        GameObject temp = movingObject.Create();
+        for (int i = 0; i < movingObjectsCount; i++)
+        {
+            GameObject temp = movingObject.Create();
 
-        temp.AddComponent<MeshFilter>();
-        temp.AddComponent<MeshRenderer>();
-        temp.AddComponent<MeshCollider>().convex = true;
-        temp.AddComponent<Rigidbody>();
-        temp.AddComponent<MovingObject>();
-        temp.SetActive(false);
+            temp.AddComponent<MeshFilter>();
+            temp.AddComponent<MeshRenderer>();
+            temp.AddComponent<MeshCollider>().convex = true;
+            temp.AddComponent<Rigidbody>();
+            temp.AddComponent<MovingObject>();
+            temp.SetActive(false);
 
-        movingObjects.Add(temp);
+            movingObjects.Add(temp);
+        }
     }
 
     public GameObject GetPoolObject()

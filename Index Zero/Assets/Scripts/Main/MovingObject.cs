@@ -18,6 +18,7 @@ public class MovingObject : MonoBehaviour
         if (rigidbodyMovingObject.position.x >= 23)
         {
             gameObject.SetActive(false);
+            gameObject.transform.position = Vector3.zero;
         }
     }
 }

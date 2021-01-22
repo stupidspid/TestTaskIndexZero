@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b41c8269cff3a3d4bb6e219dd9eed409, type: 3}
+  m_Name: MeshDataInstaller
+  m_EditorClassIdentifier: 
+  meshData:
+  - {fileID: 11400000, guid: 9b19a76eee9b97142a2197cb6296383b, type: 2}
+  - {fileID: 11400000, guid: 0712e8a9bdc7891478f5a2fa6c4b9887, type: 2}
+  - {fileID: 11400000, guid: 25bbeb4db3035494780bb2946237d5b5, type: 2}
+  - {fileID: 11400000, guid: c8fea75dd9ec2ba4c8abe5fab55c4e0d, type: 2}
